@@ -1,0 +1,6 @@
+%h1 Dealerships
+-if @dealerships.any?
+	-@dealerships.each do |dealership|
+		%ul 
+		%h5= link_to dealership.name, dealership_path(dealership)
+
